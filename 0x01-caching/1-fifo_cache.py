@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 '''Class Model - FIFOCache class'''
-from typing import Any
 from basecache import BaseCaching
 
 
@@ -24,7 +23,7 @@ class FIFOCache(BaseCaching):
             print(f"DISCARD: {first_item}")
             self.cache_data.pop(first_item)
 
-    def get(self, key) -> Any:
+    def get(self, key):
         '''Get a value from the cache system with a key'''
         if key is None or self.cache_data.get(key) is None:
             return None
