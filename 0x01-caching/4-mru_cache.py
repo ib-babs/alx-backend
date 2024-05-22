@@ -9,6 +9,7 @@ class MRUCache(BaseCaching):
     in the system to save incoming data'''
 
     def __init__(self):
+        '''Init'''
         super().__init__()
         self.recent_key = ''
 

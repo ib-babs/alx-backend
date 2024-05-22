@@ -9,6 +9,7 @@ class LRUCache(BaseCaching):
     in the system to save incoming data'''
 
     def __init__(self):
+        '''Init'''
         super().__init__()
         self.static_keys = []
 
