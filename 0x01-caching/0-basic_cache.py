@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 '''Class Model - BasicCache class'''
 from basecache import BaseCaching
 from typing import Any

@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 '''Class Model - FIFOCache class'''
 from typing import Any
 from basecache import BaseCaching
