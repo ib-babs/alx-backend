@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 '''Class Model - LFUCache class'''
-from basecache import BaseCaching
+from base_caching import BaseCaching
 
 
 def remove_min(dic):
