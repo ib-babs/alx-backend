@@ -35,7 +35,7 @@ class LFUCache(BaseCaching):
             self.lsf = remove_min(self.lfu_cnt)[1]
             del self.cache_data[self.lsf]
             del self.lfu_cnt[self.lsf]
-            print(f"Dicard {self.lsf}")
+            print(f"DISCARD: {self.lsf}")
 
         # Confirm key existence
         if len(self.lfu_cnt) <= BaseCaching.MAX_ITEMS:
