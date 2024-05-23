@@ -43,7 +43,6 @@ class LFUCache(BaseCaching):
                 self.lfu_cnt[key] += 1
             else:
                 self.lfu_cnt.update({key: 0})
-            print(self.lfu_cnt)
 
     def get(self, key):
         """ Get an item by key
