@@ -48,7 +48,8 @@ class LFUCache(BaseCaching):
     def get(self, key):
         """ Get an item by key
         """
-        if key is None or key not in self.lfu_cnt:
-            return
+        if (key is None or key not in
+                self.lfu_cnt or key not in self.cache_data):
+            return None
         self.lfu_cnt[key] += 1
         return self.cache_data.get(key)
